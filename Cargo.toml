@@ -1,0 +1,13 @@
+[package]
+name = "hephaestus"
+version = "0.1.0"
+
+[workspace]
+members = ["crates/hermes",]
+
+[dependencies]
+hermes = { path = "./crates/hermes"}
+
+[[bin]]
+name = "hephaestus"
+path = "src/main.rs"
